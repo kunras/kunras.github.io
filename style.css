@@ -1,15 +1,27 @@
+body{
+    display: grid;
+    grid-template-rows: 20% 1fr 2% 2%;
+    margin: 0;
+}
+
+
+
+
+
+/* HEADER */
 nav {
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 nav ul {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     border-radius: 25px;
-    display: flex;
     background-color: rgba(0, 0, 0, .4);
-    backdrop-filter: blur(10px);
     align-items: center;
     padding: 0 10px;
     margin: 50px 0 50px 0;
+    
 }
 
 nav ul h1{
@@ -17,12 +29,14 @@ nav ul h1{
 }
 
 nav ul li {
+    display: grid;
+    justify-items: center;
     list-style: none;
+
     padding: 12px 0px 16px 0px;
     margin: 0 8px;
-    position: relative;
+
     cursor: pointer;
-    white-space: nowrap;
     transition: 0.2s;
     border-radius: 25px;
 }
@@ -41,6 +55,7 @@ nav ul li a{
     text-decoration: none;
     text-transform: uppercase;
     padding: 0 5px 0 5px;
+    justify-content: center;
 }
 
 nav ul li:hover a{
@@ -49,9 +64,74 @@ nav ul li:hover a{
 
 nav ul li a img {
     width: 100px;
-    height: 50px;
-    
+    height: 50px;  
 }
 
 
 
+
+
+
+
+
+
+
+
+
+/* MAIN PARTIE */
+main{
+    display: grid;
+    grid-template-columns: 5% 55% 1fr 30% 5%;
+
+}
+
+section {
+background-color: rgba(0, 0, 0, .4);
+}
+
+.Derniers_chapitres{
+    grid-column: 2;
+}
+
+.Top_mangas{
+    grid-column: 4;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+
+footer{
+    grid-row: 4;
+    background-color: rgba(0, 0, 0,0.4);
+}
+
+footer p{
+    color: black;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+
+}
